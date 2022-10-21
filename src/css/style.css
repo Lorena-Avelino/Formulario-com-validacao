@@ -1,0 +1,142 @@
+body {
+  background-image: url(../images/bg-repeat.jpg);
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: contain;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+}
+
+.painel {
+  display: flex;
+  align-items: center;
+  margin: 12px;
+  gap: 60px;
+}
+
+.texto {
+  color: #fff;
+  width: 300px;
+}
+
+.texto .titulo {
+  font-weight: 900;
+  font-size: 20px;
+  margin-bottom: 11px;
+}
+
+.texto .informacao {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.formulario {
+  background-color: #fff;
+  width: 340px;
+  height: 378px;
+  box-shadow: 8px 8px 33px 0 rgba(0,0,0,0.2);
+}
+
+.formulario .campos {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.formulario .campos .campo {
+  height: 35px;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 15px;
+  color: #000;
+  padding: 8px 10px;
+}
+
+.formulario .campos .campo.mensagem {
+  padding: 8px 10px 75px 10px;
+  height: 100px;
+}
+
+.formulario .campos .obrigatorio {
+  font-weight: 400;
+  font-size: 15px;
+  margin-left: -5px;
+  margin-bottom: 11px;
+}
+
+.formulario .campos .enviar {
+  height: 40px;
+  background-color: #3ccc87;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.formulario .campos .enviar:hover{
+    opacity: 0.8;
+}
+
+/* WebKit, Edge */
+.campo::-webkit-input-placeholder {
+  color: #a8a8a8;
+  font-weight: 700;
+}
+/* Firefox 4-18 */
+.campo:-moz-placeholder {
+  color: #a8a8a8;
+  font-weight: 700;
+}
+/* Firefox 19+ */
+.campo::-moz-placeholder {
+  color: #a8a8a8;
+  font-weight: 700;
+}
+/* IE 10-11 */
+.campo:-ms-input-placeholder {
+  color: #a8a8a8;
+  font-weight: 700;
+}
+/* Edge */
+.campo::-ms-input-placeholder {
+  color: #a8a8a8;
+  font-weight: 700;
+}
+/* MODERN BROWSER */
+.campo::placeholder {
+  color: #a8a8a8;
+  font-weight: 700;
+}
+
+.valido {
+    border: 1px solid #00C22B;
+}
+
+.formulario .campos .campo.campo-obrigatorio{
+    margin-bottom: 0;
+    border-color: #F52E2E;
+}
+
+.inf-obrigatorio{
+    display: none;
+}
+
+.inf-obrigatorio.campo-obrigatorio{
+    color: #F52E2E;
+    font-weight: 400;
+    font-size: 8px;
+    margin-bottom: 6px;
+    display: block;
+}
+
+@media (max-width: 750px){
+  .painel{
+    flex-direction: column;
+    justify-content: center;
+  }
+}

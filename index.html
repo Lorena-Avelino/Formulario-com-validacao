@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+        
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    
+    <title>Desafio - HTML/CSS/JS Intermediário</title>
+</head>
+<body>
+    <main class="painel">
+        <div class="texto">
+            <h1 class="titulo">FICOU COM DÚVIDA? <br>NOS MANDE UMA MENSAGEM!</h1>
+            <p class="informacao">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+        </div>
+
+        <form class="formulario">
+            <div class="campos"> 
+                <input type="text" id="nome-completo" placeholder="Nome completo *" class="campo">
+                <label class="inf-obrigatorio" id="info-nome-completo" for="nome-completo">campo obrigatório</label>
+                <input type="email" id="email" placeholder="Email *" class="campo">
+                <label class="inf-obrigatorio" id="info-email" for="email">campo obrigatório</label>
+                <input type="tel" id="telefone" placeholder="Telefone *" class="campo">
+                <label class="inf-obrigatorio" id="info-telefone" for="telefone">campo obrigatório</label>
+                <input type="text" id="mensagem" placeholder="Mensagem *" class="campo mensagem">
+                <label class="inf-obrigatorio" id="info-mensagem" for="mensagem">campo obrigatório</label>
+                
+                <p class="obrigatorio">*campos obrigatórios</p>
+                <input class="enviar" type="button" value="Enviar">
+            </div>
+        </form>
+    </main>
+    <script type="text/javascript" src="src/js/painel.js"></script>
+</body>
+</html>
