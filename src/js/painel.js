@@ -36,7 +36,6 @@ function adicionarMensagemDeCampoObrigatorio(campo, infoASerMostrada) {
 function mudarDeCampo(campo, infoASerMostrada) {
   campo.addEventListener("blur", () => {
     const valido = campo.classList.contains("valido");
-    const obrigatorio = campo.classList.contains("campo-obrigatorio");
     console.log(campo.value.length);
     if (campo.value.length > 0 && valido) {
       campo.classList.remove("campo-obrigatorio");
