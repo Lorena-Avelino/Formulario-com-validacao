@@ -2,7 +2,7 @@ const campos = document.querySelectorAll(".campo");
 const enviar = document.querySelector(".enviar");
 
 campos.forEach((campo) => {
-  campo.addEventListener("change", () => {
+  campo.addEventListener("keyup", () => {
     validarCampo(campo);
   });
   const idDoElementoLabel = `info-${campo.id}`;
